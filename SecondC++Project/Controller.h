@@ -9,5 +9,18 @@
 #ifndef Controller_h
 #define Controller_h
 
-
+class Controller
+{
+public:
+    void start();
+    
+private:
+    void tryNumbers(int sent);
+    
+    int changeNumber();
+    
+    void changeWithPointer(int * numberPointer);
+    
+    
+};
 #endif /* Controller_h */

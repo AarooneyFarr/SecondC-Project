@@ -6,5 +6,12 @@
 //  Copyright © 2017 Farr, Aaron. All rights reserved.
 //
 
-#include "ProjectController.hpp"
+#include "Controller.h"
 
+int main()
+{
+    Controller * app = new Controller();
+    app->start();
+    
+    return 0;
+}

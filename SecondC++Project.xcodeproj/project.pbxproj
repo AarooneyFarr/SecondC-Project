@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		24A4108A1E3B9AAF00169F07 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24A410891E3B9AAF00169F07 /* Controller.cpp */; };
 		24A4108C1E3B9C6000169F07 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24A4108B1E3B9C6000169F07 /* Runner.cpp */; };
+		24D9FDD91E40EC6C005DAA8E /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24D9FDD71E40EC6C005DAA8E /* Timer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		24A410881E3B9A9A00169F07 /* Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		24A410891E3B9AAF00169F07 /* Controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		24A4108B1E3B9C6000169F07 /* Runner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
+		24D9FDD71E40EC6C005DAA8E /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		24D9FDD81E40EC6C005DAA8E /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +47,7 @@
 		24A410741E3B991600169F07 = {
 			isa = PBXGroup;
 			children = (
+				24D9FDD61E40EC44005DAA8E /* Model */,
 				24A4107F1E3B991700169F07 /* SecondC++Project */,
 				24A4107E1E3B991700169F07 /* Products */,
 			);
@@ -73,6 +77,15 @@
 				24A4108B1E3B9C6000169F07 /* Runner.cpp */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		24D9FDD61E40EC44005DAA8E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				24D9FDD71E40EC6C005DAA8E /* Timer.cpp */,
+				24D9FDD81E40EC6C005DAA8E /* Timer.hpp */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24D9FDD91E40EC6C005DAA8E /* Timer.cpp in Sources */,
 				24A4108A1E3B9AAF00169F07 /* Controller.cpp in Sources */,
 				24A4108C1E3B9C6000169F07 /* Runner.cpp in Sources */,
 			);
@@ -260,6 +274,7 @@
 				24A410861E3B991700169F07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

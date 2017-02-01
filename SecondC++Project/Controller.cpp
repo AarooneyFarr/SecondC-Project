@@ -8,17 +8,24 @@
 
 #include "Controller.h"
 #include <iostream>
+#include "../Model/Timer.hpp"
 
 using namespace std;
 
 void Controller :: start()
 {
+    Timer sillyTime;
+    sillyTime.startTimer();
+    
     int myNumber = 42;
     int * numberPointer = &myNumber;
     tryNumbers(10);
     myNumber = changeNumber();
     changeWithPointer(numberPointer);
     cout << "changed?? " << myNumber << endl;
+    
+    sillyTime.stopTimer();
+    sillyTime.displayTimerInformation();
 }
 
 void Controller :: tryNumbers(int sent)
